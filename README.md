@@ -1,6 +1,10 @@
 # openwrt-love
-ImmortalWrt 自动编译Bot
-内置open-vm-tools，如需ProxmoxVE的qemu-ga，请使用opkg install qemu-ga-xxx.ipk --force-overwrite 强制安装。
+ImmortalWrt Auto Compile Bot
+
+open-vm-tools included, if you are running ProxmoxVE, follow these steps:
+- upload qemu-ga_5.0.0-5_x86_64.ipk
+- open terminal from menu and login
+- opkg install qemu-ga_5.0.0-5_x86_64.ipk --force-overwrite
 
 
 
