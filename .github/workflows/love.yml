@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: ImmortalWRT MakeBot 202105
+name: ImmortalWRT Auto Maker v.202106
 
 on:
   repository_dispatch:
