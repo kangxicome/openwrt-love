@@ -6,21 +6,11 @@
 
 
 
-
-
-
-
-
-
 # J1900软路由安装ESXi 6.7u3
-
-
 
 ## Reference document
 
 -  https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.esxi.install.doc/GUID-C3F32E0F-297B-4B75-8B3E-C28BD08680C8.html
-
-
 
 # Prerequisites
 
@@ -63,13 +53,9 @@ stampFile.write( time.asctime() )
 ## Installation
 
 1. 配置BIOS启动菜单，选择UEFI或者BIOS模式启动安装优盘；
-
 2. ESXi安装引导倒计时，迅速按下 **Shift+O**（字母O）；
-
 3. 在命令行里输入 **ignoreHeadless=TRUE ks=file://etc/vmware/weasel/ks.cfg** 回车；
-
 4. 静等安装结束后，弹出一个黑色背景显示成功的消息框；
-
 5. 拔掉优盘，重启软路由机器；
 
    
