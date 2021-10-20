@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: ImmortalWrt 18.06
+name: ImmortalWrt v20211020
 
 on:
   repository_dispatch:
