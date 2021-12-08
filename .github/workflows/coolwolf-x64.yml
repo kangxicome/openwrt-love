@@ -67,8 +67,6 @@ jobs:
         mkdir ./package/yuki
         git clone https://github.com/kenzok8/openwrt-packages.git temp
         mv ./temp/luci-app-aliddns ./package/yuki
-        mv ./temp/luci-app-argon-config ./package/yuki
-        mv ./temp/luci-theme-argon_new ./package/yuki
         rm -rf temp        
         sed -i "/helloworld/d" "feeds.conf.default"
         echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
