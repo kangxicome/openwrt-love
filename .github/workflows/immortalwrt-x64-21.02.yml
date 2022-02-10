@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: ImmortalWrt x64 v1.0
+name: ImmortalWrt-21.02 2022.02
 
 on:
   repository_dispatch:
@@ -58,7 +58,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone https://github.com/immortalwrt/immortalwrt.git openwrt
+        git clone -b openwrt-21.02 --single-branch https://github.com/immortalwrt/immortalwrt.git openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Update feeds
@@ -122,6 +122,7 @@ jobs:
         rm -rf *-kernel*
         rm -rf sha256sums
         rm -rf *.buildinfo
+        rm -rf *.vmdk
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
