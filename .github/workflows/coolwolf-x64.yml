@@ -69,7 +69,7 @@ jobs:
         #mv ./temp/luci-app-aliddns ./package/yuki
         #rm -rf temp        
         sed -i "/helloworld/d" "feeds.conf.default"
-        #echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+        echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
         
 
     - name: Update feeds   
