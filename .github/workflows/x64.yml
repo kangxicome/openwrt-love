@@ -53,9 +53,8 @@ jobs:
     
     - name: Snow Smile
       run: |
-        cd openwrt               
-        sed -i "/yuki/d" "feeds.conf.default"
-        echo "src-git yuki https://github.com/kenzok8/openwrt-packages.git" >> "feeds.conf.default"
+        cd openwrt
+        echo "src-git Snow_Packages https://github.com/NueXini/NueXini_Packages.git" >> "feeds.conf.default"
         
 
     - name: Update feeds   
